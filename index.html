@@ -8,6 +8,8 @@
     <!-- Bootstrap Styles-->
     <link rel="stylesheet" href="resources/styles/bootstrap.min.css">
     <link rel="stylesheet" href="resources/styles/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -20,8 +22,10 @@
                     <label for="username">
                         Type Your Name:
                     </label>
-                    <input type="Enter Name Here" id="username" placeholder="Enter Name Here..">
+                    <input type="Enter Name Here" id="username" placeholder="Enter Name Here.." class="form-control">
                     <button id="start-game-buttom">
+                        <a class="btn btn-primary">
+                        </a>
                         Start Game!
                     </button>
                 </div>
@@ -32,21 +36,23 @@
                         User: 0 v CPU: 0
                     </p>
                     <form id="game-form">
-                        <div>
+                        <div class="form-group">
                             <label for="user-selection">
                                 Select your choice
                             </label>
-                            <select id="user-selection" name="user-selection">
+                            <select id="user-selection" name="user-selection" class="custom-select">
                                 <option>Rock</option>
                                 <option>Paper</option>
                                 <option>Scissors</option>
 
                             </select>
                             <button id="go-button">
+                                <a class="btn btn-success">
+                                </a>
                                 Go.!
                             </button>
                             <p id="game-history">
-                                
+
                             </p>
                         </div>
                     </form>
