@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Type your title here</title>
+    <title>Rock Paper Scissors</title>
     <!-- Bootstrap Styles-->
     <link rel="stylesheet" href="resources/styles/bootstrap.min.css">
     <link rel="stylesheet" href="resources/styles/styles.css" />
@@ -13,6 +13,48 @@
 <body>
     <div class="container">
         <!-- WORK FROM INSIDE THIS CONTAINER-->
+        <h1>Rock Paper Scissors</h1>
+        <div id="wlecome-screen">
+            <form id="name-form">
+                <div>
+                    <label for="username">
+                        Type Your Name:
+                    </label>
+                    <input type="Enter Name Here" id="username" placeholder="Enter Name Here..">
+                    <button id="start-game-buttom">
+                        Start Game!
+                    </button>
+                </div>
+            </form>
+            <div id="game-screen">
+                <div id="score-tally">
+                    <p id="score">
+                        User: 0 v CPU: 0
+                    </p>
+                    <form id="game-form">
+                        <div>
+                            <label for="user-selection">
+                                Select your choice
+                            </label>
+                            <select id="user-selection" name="user-selection">
+                                <option>Rock</option>
+                                <option>Paper</option>
+                                <option>Scissors</option>
+
+                            </select>
+                            <button id="go-button">
+                                Go.!
+                            </button>
+                            <p id="game-history">
+                                
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
