@@ -4,61 +4,47 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Type your title here</title>
+    <title>Rock Paper Scissors</title>
     <!-- Bootstrap Styles-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="resources/styles/bootstrap.min.css">
     <link rel="stylesheet" href="resources/styles/styles.css" />
 </head>
 
 <body>
-<script>
-function myFunction() {
-  document.getElementById("myDiv").style.border = "thick solid #0000FF";
-}
-</script>
-    <div class="container">
-        <!-- WORK FROM INSIDE THIS CONTAINER-->
-        <h1>Rock Paper Scissors</h1>
-        <div id = "welcome-screen"> 
-            <form id = "name-form">
-                <div>
-                    <label for= "username">Type your name: </label>
-                    <input type= "Enter Name Here..." name="username" id= "username" class = "form-control"><br>
-                </div>
-        <button type="button" class="btn btn-primary"> Start Game! </button>
-            </form>
-        </div>
-    </div>
-
-    <script> function myFunction() {
-  document.getElementById("myDiv").style.border = "thick solid #0000FF";
-}
-    </script>
-    <form>
-        <div id = "game-screen" class="form-group">
-            <div id = "score-tally">
-                <p id = "score"> USER: 0 CPU: 0 </p>
-            <form id = "game-form"> 
-                <div> 
-                    <label> Select your choice: </label>
-                    
-                    <select class="custom-select"> 
-                        <option value= "Rock"> Rock </option>
-                        <option value= "Paper"> Paper </option>
-                        <option value= "Scissors"> Scissors </option>
-                    </select>
-                </div>
-                <button type="button" class="btn btn-success"> Go! </button>
-            </form>
-            <p id = "game-history"> </p>
+<div class="container">
+    <!-- WORK FROM INSIDE THIS CONTAINER-->
+    <h1> Rock Paper Scissors</h1>
+    <div id="welcome-screen">
+        <form id="name-form">
+            <div class="form-group">
+                <label for="username"> Your Name </label>
+                <input id="username" name="username" placeholder="Enter Name Here..." class="form-control">
             </div>
+            <button id="start-game-button" class="btn btn-primary" type="button">Start Game!</button>
+        </form>
+    </div>
+    <div id="game-screen">
+        <div id="score-tally">
+            <p id="score">User: 0 v CPU: 0</p>
         </div>
-    </form>
+        <form action="" id="game-form">
+            <div  class="form-group">
+                <label for="user-selection">Select your choice:</label>
+                <select name="user-selection" id="user-selection" class="custom-select">
+                    <option value="rock">Rock</option>
+                    <option value="paper">Paper</option>
+                    <option value="scissors">Scissors</option>
+                </select>
+            </div>
+            <button id="go-button" class="btn btn-success" type="button">Go!</button>
+        </form>
+        <p id="game-history"></p>
+    </div>
+</div>
 
-    <!-- Our own Scripts -->
-    <script src="resources/scripts/rock_paper_scissors.js"></script>
-    <script src="resources/scripts/index.js"></script>
+<!-- Our own Scripts -->
+<script src="resources/scripts/rock_paper_scissors.js"></script>
+<script src="resources/scripts/index.js"></script>
 </body>
 
 </html>
